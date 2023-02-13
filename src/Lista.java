@@ -1,4 +1,4 @@
-public class List {
+public class Lista {
     private int capacidade = 100;
     private Funcionario[] lista = new Funcionario[capacidade];
 // methods
