@@ -33,16 +33,19 @@ public class Funcionario {
     }
 
     // Lista
-    public class Lista {
-        private int capacidade = 100;
+    public static class Lista {
+        private int capacidade;
 
         private int comprimento = 0;
         private Funcionario[] lista = new Funcionario[capacidade];
 
         // construtor
-        // todo fix this constructor
+        public Lista() {
+            this.capacidade = 100;
+        }
+
         public Lista(int capacidade) {
-            this.capacidade = capacidade != 0 : this.capacidade = 0;
+            this.capacidade = capacidade;
         }
 
         // methods
