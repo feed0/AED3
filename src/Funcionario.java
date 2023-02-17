@@ -19,13 +19,13 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    // constructor
+    // construtor
     public Funcionario(String nome, Float salario) {
         this.nome = nome;
         this.salario = salario;
     }
 
-    // methods
+    // metodos
     public String toString() {
         return String.format("""
                 Nome = %s
@@ -36,11 +36,18 @@ public class Funcionario {
         private int capacidade = 100;
         private Funcionario[] lista = new Funcionario[capacidade];
 
+        // construtor
+        // todo fix this constructor
+        public Lista(int capacidade) {
+            this.capacidade = capacidade != 0 : this.capacidade = 0;
+        }
+
         // methods
+        // todo I should consider that the array mustn't have any gaps (nulls in between)
         /**
-         * Adds a new element to the first null space.
+         * Adiciona o novo elemento no primeiro espaco livre.
          *
-         * @param func
+         * @param func nome do novo funcionario.
          */
         public void adiciona(Funcionario func) {
             for (int i = 0; i < capacidade; i++) {
@@ -53,8 +60,13 @@ public class Funcionario {
             return lista[posicao];
         }
 
+        /**
+         * Compara o elemento na posicao dada com o objeto nulo.
+         * @param posicao
+         * @return true se se o elemento nao for nulo.
+         */
         private boolean posicaoOcupada(int posicao) {
-            return lista[posicao] == null;
+            return lista[posicao] != null;
         }
 
         public void remove(int posicao) {
@@ -62,11 +74,12 @@ public class Funcionario {
                 lista[posicao] = null;
         }
 
+        // todo try using for each instead of using i
         /**
-         * Returns true if there's any occurrences of the given element.
+         * Procura por um nome de funcionario.
          *
-         * @param nome
-         * @return
+         * @param nome funcionario buscado.
+         * @return true se existir qualquer ocorrencia.
          */
         public boolean contem(String nome) {
             for (int i = 0; i < capacidade; i++)
@@ -75,10 +88,11 @@ public class Funcionario {
             return false;
         }
 
+        // todo add the length atribute to avoid iterating
         /**
-         * Runs linearly through the array counting non-null elements
+         * Itera pela lista contando elementos nao nulos.
          *
-         * @return
+         * @return numero de elementos.
          */
         public int tamanho() {
             int saida = 0;
@@ -94,6 +108,7 @@ public class Funcionario {
                     System.out.println(e);
         }
 
+        // todo try the insertion method
         public void ordenaPorNome() {
         }
     }
