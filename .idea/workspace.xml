@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added.">
+      <change afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,12 +44,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="List" />
@@ -101,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676654850620</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Now the add method considers the length attribute.">
+      <created>1676663614040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676663614040</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added.">
+      <created>1676673721547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676673721548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +138,8 @@
     <MESSAGE value="As asked by our teacher, the list class has been nested in the Employee class." />
     <MESSAGE value="Added todo's on most of the methods" />
     <MESSAGE value="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element." />
-    <option name="LAST_COMMIT_MESSAGE" value="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element." />
+    <MESSAGE value="Now the add method considers the length attribute." />
+    <MESSAGE value="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added." />
   </component>
 </project>

@@ -1,0 +1,3 @@
+Funcionario:
+Fixed warnings, except about the never used methods.
+

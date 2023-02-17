@@ -8,7 +8,7 @@ public class Funcionario {
     }
 
     public void setNome(String nome) {
-        this.nome = this.nome;
+        this.nome = nome;
     }
 
     public Float getSalario() {
@@ -44,10 +44,6 @@ public class Funcionario {
             this.capacidade = 100;
         }
 
-        public Lista(int capacidade) {
-            this.capacidade = capacidade;
-        }
-
         // methods
         /**
          * Caso haja espaco, adiciona um funcionario logo apos o ultimo. <br>
@@ -68,7 +64,7 @@ public class Funcionario {
 
         /**
          * Compara o elemento na posicao dada com o objeto nulo.
-         * @param posicao
+         * @param posicao indice da procura.
          * @return true se se o elemento nao for nulo.
          */
         private boolean posicaoOcupada(int posicao) {
@@ -89,7 +85,7 @@ public class Funcionario {
          */
         public boolean contem(String nome) {
             for (int i = 0; i < capacidade; i++)
-                if (lista[i].getNome() == nome)
+                if (lista[i].getNome().equalsIgnoreCase(nome))
                     return true;
             return false;
         }
