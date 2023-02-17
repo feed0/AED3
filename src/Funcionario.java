@@ -46,23 +46,16 @@ public class Funcionario {
         }
 
         // methods
-        // todo I should consider that the array mustn't have any gaps (nulls in between)
-        // todo therefore the add method should use length atribute to avoid iterating
-        // todo since the first statement is expected to be true.
         /**
-         * Procura por um espaco livre.
-         * Adiciona o novo elemento no primeiro espaco livre.
-         * Incrementa o atributo comprimento.
+         * Caso haja espaco, adiciona um funcionario logo apos o ultimo. <br>
+         * Entao, incrementa o atributo comprimento.
+         *
          * @param func nome do novo funcionario.
          */
         public void adiciona(Funcionario func) {
-
-            for (int i = 0; i < capacidade; i++) {
-                if (lista[i] == null) {
-                    lista[i] = func;
-                    comprimento++;
-                    break;
-                }
+            if (comprimento < capacidade) {
+                lista[comprimento + 1] = func;
+                comprimento++;
             }
         }
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Added todo's on most of the methods">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
     </list>
@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676645052839</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element.">
+      <created>1676654850620</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676654850620</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +120,7 @@
     <MESSAGE value="Almost all the methods have their first builds." />
     <MESSAGE value="As asked by our teacher, the list class has been nested in the Employee class." />
     <MESSAGE value="Added todo's on most of the methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added todo's on most of the methods" />
+    <MESSAGE value="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element." />
+    <option name="LAST_COMMIT_MESSAGE" value="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element." />
   </component>
 </project>
