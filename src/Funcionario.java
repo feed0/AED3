@@ -32,8 +32,11 @@ public class Funcionario {
                 Salario = %.2f""", nome, salario);
     }
 
+    // Lista
     public class Lista {
         private int capacidade = 100;
+
+        private int comprimento = 0;
         private Funcionario[] lista = new Funcionario[capacidade];
 
         // construtor
@@ -44,15 +47,22 @@ public class Funcionario {
 
         // methods
         // todo I should consider that the array mustn't have any gaps (nulls in between)
+        // todo therefore the add method should use length atribute to avoid iterating
+        // todo since the first statement is expected to be true.
         /**
+         * Procura por um espaco livre.
          * Adiciona o novo elemento no primeiro espaco livre.
-         *
+         * Incrementa o atributo comprimento.
          * @param func nome do novo funcionario.
          */
         public void adiciona(Funcionario func) {
+
             for (int i = 0; i < capacidade; i++) {
-                if (lista[i] == null)
+                if (lista[i] == null) {
                     lista[i] = func;
+                    comprimento++;
+                    break;
+                }
             }
         }
 
