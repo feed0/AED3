@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added.">
-      <change afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Added change log">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,14 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Funcionario">
+    <configuration name="Funcionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Funcionario" />
+      <module name="AED3_project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="List" />
       <module name="AED3_project" />
@@ -63,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Funcionario" />
         <item itemvalue="Application.List" />
       </list>
     </recent_temporary>
@@ -118,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676673721548</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added change log">
+      <created>1676674422755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676674422755</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +156,7 @@
     <MESSAGE value="Since the array behaviour is to leave empty spaces only to the right most indexes, I'm considering to avoid the use of a loop to find the spot of an hypothetical new element." />
     <MESSAGE value="Now the add method considers the length attribute." />
     <MESSAGE value="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added." />
+    <MESSAGE value="Added change log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added change log" />
   </component>
 </project>

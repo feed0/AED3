@@ -40,6 +40,9 @@ public class Funcionario {
         private Funcionario[] lista = new Funcionario[capacidade];
 
         // construtor
+        /**
+         * Cria uma lista com 100 espacos.
+         */
         public Lista() {
             this.capacidade = 100;
         }
@@ -58,6 +61,11 @@ public class Funcionario {
             }
         }
 
+        /**
+         * Procurar por um funcionario com base em uma dada posicao.
+         * @param posicao indice do funcionario.
+         * @return funcionario na posicao dada.
+         */
         public Funcionario busca(int posicao) {
             return lista[posicao];
         }
@@ -65,18 +73,23 @@ public class Funcionario {
         /**
          * Compara o elemento na posicao dada com o objeto nulo.
          * @param posicao indice da procura.
-         * @return true se se o elemento nao for nulo.
+         * @return true se o elemento nao for nulo.
          */
+        // todo prevent outOfBound indexes
         private boolean posicaoOcupada(int posicao) {
             return lista[posicao] != null;
         }
 
+        /**
+         * Remove um funcionario na posicao fornecida.
+         * @param posicao indice do funcionario na lista.
+         */
+        // todo prevent outOfBound indexes
         public void remove(int posicao) {
             if (posicaoOcupada(posicao))
                 lista[posicao] = null;
         }
 
-        // todo try using for each instead of using i
         /**
          * Procura por um nome de funcionario.
          *
@@ -84,7 +97,7 @@ public class Funcionario {
          * @return true se existir qualquer ocorrencia.
          */
         public boolean contem(String nome) {
-            for (int i = 0; i < capacidade; i++)
+            for (int i=0; i<=comprimento; i++)
                 if (lista[i].getNome().equalsIgnoreCase(nome))
                     return true;
             return false;
@@ -104,6 +117,9 @@ public class Funcionario {
             return saida;
         }
 
+        /**
+         *
+         */
         public void imprime() {
             for (Funcionario e : lista)
                 if (e != null)
@@ -113,5 +129,11 @@ public class Funcionario {
         // todo try the insertion method
         public void ordenaPorNome() {
         }
+    }
+
+    public static void main(String[] args) {
+        int[] a = new int[10];
+        for (int e : a)
+            System.out.println(e);
     }
 }
