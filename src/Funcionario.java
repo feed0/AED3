@@ -75,15 +75,15 @@ public class Funcionario {
          * @param posicao indice da procura.
          * @return true se o elemento nao for nulo.
          */
-        // todo prevent outOfBound indexes with try catch
         private boolean posicaoOcupada(int posicao) {
             try {
                 return lista[posicao] != null;
             }
-            // catch (nomeDaException variavel) {
-                //statements
+            catch (IndexOutOfBoundsException indexOutOfBoundsException) {
+                System.out.println(indexOutOfBoundsException
+                        + "A posição '" + posicao + "' é maior que a capacidade da lista [" + capacidade + "].");
+                return false;
             }
-
         }
 
         /**
