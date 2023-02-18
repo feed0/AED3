@@ -1,3 +1,5 @@
 Funcionario:
-Fixed warnings, except about the never used methods;
-Limited the iteration loop in the contem method to the length of the array;
+    Fixed warnings, except about the never used methods;
+    Limited the iteration loop in the contem method to the length of the array;
+    Just made a research and found helpful info about exception handling,
+which includes names of exceptions and that some sources use "e" as an alias for the variable;

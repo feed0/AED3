@@ -75,9 +75,15 @@ public class Funcionario {
          * @param posicao indice da procura.
          * @return true se o elemento nao for nulo.
          */
-        // todo prevent outOfBound indexes
+        // todo prevent outOfBound indexes with try catch
         private boolean posicaoOcupada(int posicao) {
-            return lista[posicao] != null;
+            try {
+                return lista[posicao] != null;
+            }
+            // catch (nomeDaException variavel) {
+                //statements
+            }
+
         }
 
         /**
