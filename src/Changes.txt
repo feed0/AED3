@@ -5,3 +5,5 @@ Funcionario:
 which includes names of exceptions and that some sources use "e" as an alias for the variable;
     IndexOutOfBounds treated in posicaoOcupada();
     remove() needs several tests and fixes;
+    There's a huge complication with the list as an inner class. Since the list isn't static,
+I can't create one of its instaces without an employee. I don't the point of our professor.

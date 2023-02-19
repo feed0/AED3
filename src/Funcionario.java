@@ -33,8 +33,8 @@ public class Funcionario {
     }
 
     // Lista
-    public static class Lista {
-        private int capacidade;
+    public class Lista {
+        private int capacidade = 100;
 
         private int comprimento = 0;
         private Funcionario[] lista = new Funcionario[capacidade];
@@ -44,7 +44,8 @@ public class Funcionario {
          * Cria uma lista com 100 espacos.
          */
         public Lista() {
-            this.capacidade = 100;
+
+            //this.capacidade = 100;
         }
 
         // methods
@@ -90,14 +91,25 @@ public class Funcionario {
          * Remove um funcionario na posicao fornecida.
          * @param posicao indice do funcionario na lista.
          */
-        // todo prevent outOfBound indexes
-        // todo return removed element
+        // todo prevent outOfBound indexes /
+        // todo return removed element /
         // todo the all the next elements to one index bellow
         public Funcionario remove(int posicao) {
             if (posicaoOcupada(posicao)) {
+                // guarda o funcionario a ser removido
                 Funcionario removido = lista[posicao];
-                lista[posicao] = null;
-                // pull the rest of the array one index bellow
+
+                // se a posicao nao for a ultima ocupada no vetor, passa pelo loop.
+                if (posicao < comprimento-1)
+                    // reescreve todos os elementos num indice a menos.
+                    for (int i=posicao; lista[i] != null; i++)
+                        lista[i] = lista[i+1];
+
+                // finalmente remove o ultimo funcionario
+                lista[comprimento] = null;
+
+                // reduz o comprimento
+                comprimento--;
                 return removido;
             }
             return null;

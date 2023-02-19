@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="IndexOutOfBounds treated in posicaoOcupada()">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="remove() needs several tests and fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676754000856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="remove() needs several tests and fixes">
+      <created>1676805030724</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676805030724</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +188,7 @@
     <MESSAGE value="Added change log" />
     <MESSAGE value="posicaoOcupada() needs exception handling" />
     <MESSAGE value="IndexOutOfBounds treated in posicaoOcupada()" />
-    <option name="LAST_COMMIT_MESSAGE" value="IndexOutOfBounds treated in posicaoOcupada()" />
+    <MESSAGE value="remove() needs several tests and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove() needs several tests and fixes" />
   </component>
 </project>
