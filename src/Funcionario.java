@@ -91,9 +91,16 @@ public class Funcionario {
          * @param posicao indice do funcionario na lista.
          */
         // todo prevent outOfBound indexes
-        public void remove(int posicao) {
-            if (posicaoOcupada(posicao))
+        // todo return removed element
+        // todo the all the next elements to one index bellow
+        public Funcionario remove(int posicao) {
+            if (posicaoOcupada(posicao)) {
+                Funcionario removido = lista[posicao];
                 lista[posicao] = null;
+                // pull the rest of the array one index bellow
+                return removido;
+            }
+            return null;
         }
 
         /**

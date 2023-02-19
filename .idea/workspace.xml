@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Added change log">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="IndexOutOfBounds treated in posicaoOcupada()">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +133,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676674422755</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="posicaoOcupada() needs exception handling">
+      <created>1676731475216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676731475216</updated>
+    </task>
+    <task id="LOCAL-00009" summary="IndexOutOfBounds treated in posicaoOcupada()">
+      <created>1676753992687</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676753992687</updated>
+    </task>
+    <task id="LOCAL-00010" summary="IndexOutOfBounds treated in posicaoOcupada()">
+      <created>1676754000856</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676754000856</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +177,8 @@
     <MESSAGE value="Now the add method considers the length attribute." />
     <MESSAGE value="Apparently Java doesn't support optional parameters in constructors, hence a new signature had to be added." />
     <MESSAGE value="Added change log" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added change log" />
+    <MESSAGE value="posicaoOcupada() needs exception handling" />
+    <MESSAGE value="IndexOutOfBounds treated in posicaoOcupada()" />
+    <option name="LAST_COMMIT_MESSAGE" value="IndexOutOfBounds treated in posicaoOcupada()" />
   </component>
 </project>
