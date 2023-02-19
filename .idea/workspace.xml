@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="remove() needs several tests and fixes">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Lista() shouldn't be an inner class!">
+      <change afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Archive/Lista.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -55,6 +57,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Felipe\Documents\GitHub\AED3\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Funcionario">
     <configuration name="Funcionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Funcionario" />
@@ -163,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676805030724</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lista() shouldn't be an inner class!">
+      <created>1676837950014</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676837950014</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +203,7 @@
     <MESSAGE value="posicaoOcupada() needs exception handling" />
     <MESSAGE value="IndexOutOfBounds treated in posicaoOcupada()" />
     <MESSAGE value="remove() needs several tests and fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove() needs several tests and fixes" />
+    <MESSAGE value="Lista() shouldn't be an inner class!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lista() shouldn't be an inner class!" />
   </component>
 </project>

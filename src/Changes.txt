@@ -6,4 +6,5 @@ which includes names of exceptions and that some sources use "e" as an alias for
     IndexOutOfBounds treated in posicaoOcupada();
     remove() needs several tests and fixes;
     There's a huge complication with the list as an inner class. Since the list isn't static,
-I can't create one of its instaces without an employee. I don't the point of our professor.
+I can't create one of its instaces without an employee. I don't get the point of our professor.
+    Someone told me the prof. decided to include another class named Business to carry the array. Finally.
