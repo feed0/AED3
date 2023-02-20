@@ -31,7 +31,4 @@ public class Funcionario {
                 Nome = %s
                 Salario = %.2f""", nome, salario);
     }
-
-    // Lista
-
 }

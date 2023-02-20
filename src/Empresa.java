@@ -20,7 +20,7 @@ public class Empresa {
      * @param func nome do novo funcionario.
      */
     public void adiciona(Funcionario func) {
-        if (comprimento < capacidade) {
+        if (!isFull()) {
             lista[comprimento + 1] = func;
             comprimento++;
         }
@@ -39,6 +39,7 @@ public class Empresa {
      * Compara o elemento na posicao dada com o objeto nulo.
      * @param posicao indice da procura.
      * @return true se o elemento nao for nulo.
+     * @exception IndexOutOfBoundsException false se a posicao fornecida for maior que a capacidade.
      */
     private boolean posicaoOcupada(int posicao) {
         try {
@@ -55,6 +56,7 @@ public class Empresa {
      * Remove um funcionario na posicao fornecida.
      * @param posicao indice do funcionario na lista.
      * @return objeto do funcionario removido.
+     * @exception IndexOutOfBoundsException já é tratada na primeira linha com outro método.
      */
     public Funcionario remove(int posicao) {
         if (posicaoOcupada(posicao)) {
@@ -97,23 +99,26 @@ public class Empresa {
      * @return numero de elementos.
      */
     public int tamanho() {
-        int saida = 0;
-        for (Funcionario e : lista)
-            if (e != null)
-                saida++;
-        return saida;
+        return comprimento;
     }
 
     /**
-     *
+     *Itera pelo array imprimindo cada objeto.
      */
     public void imprime() {
-        for (Funcionario e : lista)
-            if (e != null)
-                System.out.println(e);
+        for (int i=0; lista[i] != null; i++)
+            System.out.println(lista[i]);
     }
 
     // todo try the insertion method
     public void ordenaPorNome() {
+    }
+
+    /**
+     * Compara o comprimento atual com a capacidade total.
+     * @return true se iguais.
+     */
+    public boolean isFull() {
+        return comprimento == capacidade;
     }
 }
