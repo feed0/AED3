@@ -92,7 +92,6 @@ public class Empresa {
         return false;
     }
 
-    // todo add the length atribute to avoid iterating
     /**
      * Itera pela lista contando elementos nao nulos.
      *
@@ -110,8 +109,19 @@ public class Empresa {
             System.out.println(lista[i]);
     }
 
-    // todo try the insertion method
+    /**
+     * Usa metodo de insercao para ordenar alfabeticamente
+     */
     public void ordenaPorNome() {
+        for (int i=1; i<comprimento; i++) {
+            int pointer = i;
+            while (pointer > 0 && lista[pointer-1].getNome().compareTo(lista[pointer].getNome()) > 0) {
+                Funcionario temp = lista[pointer-1];
+                lista[pointer-1] = lista[pointer];
+                lista[pointer] = temp;
+                pointer--;
+            }
+        }
     }
 
     /**
