@@ -14,3 +14,4 @@ I can't create one of its instaces without an employee. I don't get the point of
     tamanho() now simply returns the comprimento atribute;
     imprime() has a stop condition now that the array is sorted with null to the end;
     ordenaPorNome() now uses insertion sort;
+    Include a .txt file with names and salaries;

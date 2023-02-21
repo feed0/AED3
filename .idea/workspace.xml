@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Lista() shouldn't be an inner class!">
-      <change afterPath="$PROJECT_DIR$/src/Revisao.txt" afterDir="false" />
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="ordenaPorNome() now uses insertion sort.">
+      <change afterPath="$PROJECT_DIR$/src/lista_funcionarios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <recent name="C:\Users\Felipe\Documents\GitHub\AED3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Funcionario">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Funcionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Funcionario" />
       <module name="AED3_project" />
@@ -76,8 +77,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="AED3_project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Funcionario" />
         <item itemvalue="Application.List" />
       </list>
@@ -176,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676837950014</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="4 minor refactorings in Empresa.java">
+      <created>1676888321627</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676888321627</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ordenaPorNome() now uses insertion sort.">
+      <created>1676917875472</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676917875472</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +226,18 @@
     <MESSAGE value="IndexOutOfBounds treated in posicaoOcupada()" />
     <MESSAGE value="remove() needs several tests and fixes" />
     <MESSAGE value="Lista() shouldn't be an inner class!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lista() shouldn't be an inner class!" />
+    <MESSAGE value="4 minor refactorings in Empresa.java" />
+    <MESSAGE value="ordenaPorNome() now uses insertion sort." />
+    <option name="LAST_COMMIT_MESSAGE" value="ordenaPorNome() now uses insertion sort." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.FileNotFoundException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

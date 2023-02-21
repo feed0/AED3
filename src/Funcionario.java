@@ -1,6 +1,6 @@
 public class Funcionario {
     private String nome;
-    private Float salario;
+    private double salario;
 
     // get set
     public String getNome() {
@@ -11,16 +11,16 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public Float getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(Float salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
     // construtor
-    public Funcionario(String nome, Float salario) {
+    public Funcionario(String nome, double salario) {
         this.nome = nome;
         this.salario = salario;
     }

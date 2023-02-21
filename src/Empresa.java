@@ -1,15 +1,16 @@
 public class Empresa {
-    private int capacidade = 100;
-    private Funcionario[] lista = new Funcionario[capacidade];
-    private int comprimento = 0;
+    private int capacidade;
+    private Funcionario[] lista;
+    private int comprimento;
 
     // construtor
     /**
-     * Cria uma lista com 100 espacos.
+     * Cria uma empresa com 100 vagas para funcionarios.
      */
     public Empresa() {
-
-        //this.capacidade = 100;
+        this.capacidade = 100;
+        this.lista = new Funcionario[capacidade];
+        this.comprimento = 0;
     }
 
     // methods
