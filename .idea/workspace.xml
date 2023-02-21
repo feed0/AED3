@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="ordenaPorNome() now uses insertion sort.">
-      <change afterPath="$PROJECT_DIR$/src/lista_funcionarios.txt" afterDir="false" />
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Included lista_funcionarios.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
@@ -199,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676917875472</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Included lista_funcionarios.txt">
+      <created>1676986814835</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676986814835</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,7 +233,8 @@
     <MESSAGE value="Lista() shouldn't be an inner class!" />
     <MESSAGE value="4 minor refactorings in Empresa.java" />
     <MESSAGE value="ordenaPorNome() now uses insertion sort." />
-    <option name="LAST_COMMIT_MESSAGE" value="ordenaPorNome() now uses insertion sort." />
+    <MESSAGE value="Included lista_funcionarios.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Included lista_funcionarios.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

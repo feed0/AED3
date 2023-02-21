@@ -22,7 +22,7 @@ public class Empresa {
      */
     public void adiciona(Funcionario func) {
         if (!isFull()) {
-            lista[comprimento + 1] = func;
+            lista[comprimento] = func;
             comprimento++;
         }
     }
@@ -107,7 +107,9 @@ public class Empresa {
      */
     public void imprime() {
         for (int i=0; lista[i] != null; i++)
-            System.out.println(lista[i]);
+            System.out.printf("""
+                    [%d] %s""",
+                    i, lista[i]);
     }
 
     /**

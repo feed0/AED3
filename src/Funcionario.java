@@ -28,7 +28,7 @@ public class Funcionario {
     // metodos
     public String toString() {
         return String.format("""
-                Nome = %s
-                Salario = %.2f""", nome, salario);
+                (Nome: %s, Salario: %.2f)""",
+                nome, salario);
     }
 }

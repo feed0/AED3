@@ -15,3 +15,5 @@ I can't create one of its instaces without an employee. I don't get the point of
     imprime() has a stop condition now that the array is sorted with null to the end;
     ordenaPorNome() now uses insertion sort;
     Include a .txt file with names and salaries;
+
+    added numerous tasks to the backlog;
