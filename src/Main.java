@@ -6,22 +6,35 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("src\\lista_funcionarios.txt");
         Scanner scan = new Scanner(file);
-
         Empresa empresa = new Empresa();
-        // todo ( ) Cadastre o nome e o salário de 5 funcionários
-        // todo ( ) liste todos os dados dos funcionários
 
-        /*while (scan.hasNextLine()) {
-            // todo ( ) study split method
-            // todo ( ) java args* and kwargs**
-            // todo ( ) java *list
-            // todo ( ) java Pair (tuple)
+        while (scan.hasNextLine()) {
             String[] func = scan.nextLine().split(",");
-            System.out.println(func[0] + func[1]);
             empresa.adiciona(new Funcionario(func[0], Double.parseDouble(func[1])));
-        }*/
-        empresa.adiciona(new Funcionario("aaa", 123));
+        }
+
         empresa.imprime();
+
+//        System.out.printf("%b\n%b",
+//                empresa.contem("Andre Antunes"),
+//                empresa.contem("Inexistente")
+//        );
+
+        System.out.printf("%s\n%s\n%s\n",
+                empresa.busca(3),
+                empresa.busca(10),
+                empresa.busca(1000)
+        );
+
+        System.out.println("\n_______----__\n");
+
+
+//        empresa.ordenaPorNome();
+//        empresa.imprime();
+//
+//        empresa.remove(2);
+//        empresa.remove(10);
+//        empresa.remove(1000);
     }
 }
 

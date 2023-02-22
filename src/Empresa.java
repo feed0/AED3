@@ -3,6 +3,11 @@ public class Empresa {
     private Funcionario[] lista;
     private int comprimento;
 
+    // get set
+    public Funcionario[] getLista() {
+        return lista;
+    }
+
     // construtor
     /**
      * Cria uma empresa com 100 vagas para funcionarios.
@@ -22,7 +27,7 @@ public class Empresa {
      */
     public void adiciona(Funcionario func) {
         if (!isFull()) {
-            lista[comprimento] = func;
+            getLista()[comprimento] = func;
             comprimento++;
         }
     }
@@ -33,7 +38,13 @@ public class Empresa {
      * @return funcionario na posicao dada.
      */
     public Funcionario busca(int posicao) {
-        return lista[posicao];
+        try {
+            return getLista()[posicao];
+        }
+        catch (ArrayIndexOutOfBoundsException IOB) {
+            System.out.println("Posicão inválida acima da capacidade da lista" + IOB);
+            return null;
+        }
     }
 
     /**
@@ -44,7 +55,7 @@ public class Empresa {
      */
     private boolean posicaoOcupada(int posicao) {
         try {
-            return lista[posicao] != null;
+            return getLista()[posicao] != null;
         }
         catch (IndexOutOfBoundsException indexOutOfBoundsException) {
             System.out.println(indexOutOfBoundsException
@@ -62,16 +73,16 @@ public class Empresa {
     public Funcionario remove(int posicao) {
         if (posicaoOcupada(posicao)) {
             // guarda o funcionario a ser removido
-            Funcionario removido = lista[posicao];
+            Funcionario removido = getLista()[posicao];
 
             // se a posicao nao for a ultima ocupada no vetor, passa pelo loop.
             if (posicao < comprimento-1)
                 // reescreve todos os elementos num indice a menos.
-                for (int i=posicao; lista[i] != null; i++)
-                    lista[i] = lista[i+1];
+                for (int i = posicao; getLista()[i] != null; i++)
+                    getLista()[i] = getLista()[i+1];
 
             // finalmente remove o ultimo funcionario
-            lista[comprimento] = null;
+            getLista()[comprimento] = null;
 
             // reduz o comprimento
             comprimento--;
@@ -87,8 +98,8 @@ public class Empresa {
      * @return true se existir qualquer ocorrencia.
      */
     public boolean contem(String nome) {
-        for (int i=0; i<=comprimento; i++)
-            if (lista[i].getNome().equalsIgnoreCase(nome))
+        for (int i = 0; getLista()[i] != null; i++)
+            if (getLista()[i].getNome().equalsIgnoreCase(nome))
                 return true;
         return false;
     }
@@ -106,10 +117,10 @@ public class Empresa {
      *Itera pelo array imprimindo cada objeto.
      */
     public void imprime() {
-        for (int i=0; lista[i] != null; i++)
+        for (int i = 0; getLista()[i] != null; i++)
             System.out.printf("""
-                    [%d] %s""",
-                    i, lista[i]);
+                    [%d] %s\n""",
+                    i, getLista()[i]);
     }
 
     /**
@@ -118,10 +129,10 @@ public class Empresa {
     public void ordenaPorNome() {
         for (int i=1; i<comprimento; i++) {
             int pointer = i;
-            while (pointer > 0 && lista[pointer-1].getNome().compareTo(lista[pointer].getNome()) > 0) {
-                Funcionario temp = lista[pointer-1];
-                lista[pointer-1] = lista[pointer];
-                lista[pointer] = temp;
+            while (pointer > 0 && getLista()[pointer-1].getNome().compareTo(getLista()[pointer].getNome()) > 0) {
+                Funcionario temp = getLista()[pointer-1];
+                getLista()[pointer-1] = getLista()[pointer];
+                getLista()[pointer] = temp;
                 pointer--;
             }
         }
@@ -130,6 +141,7 @@ public class Empresa {
     /**
      * Compara o comprimento atual com a capacidade total.
      * @return true se iguais.
+
      */
     public boolean isFull() {
         return comprimento == capacidade;

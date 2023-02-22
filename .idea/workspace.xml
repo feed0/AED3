@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Included lista_funcionarios.txt">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="added numerous tasks to the backlog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Revisao.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Revisao.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -204,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676986814835</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added numerous tasks to the backlog">
+      <created>1677006015548</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677006015548</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +243,8 @@
     <MESSAGE value="4 minor refactorings in Empresa.java" />
     <MESSAGE value="ordenaPorNome() now uses insertion sort." />
     <MESSAGE value="Included lista_funcionarios.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Included lista_funcionarios.txt" />
+    <MESSAGE value="added numerous tasks to the backlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="added numerous tasks to the backlog" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
