@@ -1,5 +1,8 @@
-Andre Antunes, 1234
+Andre Antunes, 1234.11111111
 Bruna Braughn, 4321
 Cletus Crumstead, 1000000
 David Daytone, 1230
 Edward Sheeran, 9090
+Zetulio Ultimo, 56.09
+Sarah Va, 69.00000000123
+Antonio Segundo, 34.22222

@@ -28,10 +28,10 @@ Desenvolva um código Java para testar as classes Funcionário e Lista que reali
 
 (/) Cadastre o nome e o salário de 5 funcionários
 (/) liste todos os dados dos funcionários
-( ) Pesquise por nome um funcionário existente
-( ) Pesquise por nome um funcionário que não existe
-( ) Busque um funcionário por sua posição
-( ) Busque um funcionário com uma posição inválida
-( ) Liste todos os funcionários em ordem alfabética
-( ) Realizar uma remoção de um registro existente
-( ) Tentar uma remoção de um registro não existente
+(/) Pesquise por nome um funcionário existente
+(/) Pesquise por nome um funcionário que não existe
+(/) Busque um funcionário por sua posição
+(/) Busque um funcionário com uma posição inválida
+(/) Liste todos os funcionários em ordem alfabética
+(/) Realizar uma remoção de um registro existente
+(/) Tentar uma remoção de um registro não existente

@@ -18,3 +18,5 @@ I can't create one of its instaces without an employee. I don't get the point of
 
     added numerous tasks to the backlog;
     Empresa.busca() handles ArrayIndexOutOfBoundsException;
+
+    ! The first assignment of the year is finished !

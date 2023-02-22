@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="added numerous tasks to the backlog">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Empresa.busca() handles ArrayIndexOutOfBoundsException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Revisao.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Revisao.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lista_funcionarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/lista_funcionarios.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677006015548</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Empresa.busca() handles ArrayIndexOutOfBoundsException">
+      <created>1677030004251</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677030004251</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,7 +252,8 @@
     <MESSAGE value="ordenaPorNome() now uses insertion sort." />
     <MESSAGE value="Included lista_funcionarios.txt" />
     <MESSAGE value="added numerous tasks to the backlog" />
-    <option name="LAST_COMMIT_MESSAGE" value="added numerous tasks to the backlog" />
+    <MESSAGE value="Empresa.busca() handles ArrayIndexOutOfBoundsException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empresa.busca() handles ArrayIndexOutOfBoundsException" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

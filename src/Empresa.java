@@ -1,12 +1,7 @@
 public class Empresa {
-    private int capacidade;
-    private Funcionario[] lista;
+    private final int capacidade;
+    private final Funcionario[] lista;
     private int comprimento;
-
-    // get set
-    public Funcionario[] getLista() {
-        return lista;
-    }
 
     // construtor
     /**
@@ -27,7 +22,7 @@ public class Empresa {
      */
     public void adiciona(Funcionario func) {
         if (!isFull()) {
-            getLista()[comprimento] = func;
+            lista[comprimento] = func;
             comprimento++;
         }
     }
@@ -39,10 +34,10 @@ public class Empresa {
      */
     public Funcionario busca(int posicao) {
         try {
-            return getLista()[posicao];
+            return lista[posicao];
         }
-        catch (ArrayIndexOutOfBoundsException IOB) {
-            System.out.println("Posicão inválida acima da capacidade da lista" + IOB);
+        catch (ArrayIndexOutOfBoundsException aiob) {
+            System.out.println(aiob);
             return null;
         }
     }
@@ -55,11 +50,10 @@ public class Empresa {
      */
     private boolean posicaoOcupada(int posicao) {
         try {
-            return getLista()[posicao] != null;
+            return lista[posicao] != null;
         }
-        catch (IndexOutOfBoundsException indexOutOfBoundsException) {
-            System.out.println(indexOutOfBoundsException
-                    + "A posição '" + posicao + "' é maior que a capacidade da lista [" + capacidade + "].");
+        catch (IndexOutOfBoundsException iob) {
+            System.out.println(iob);
             return false;
         }
     }
@@ -73,16 +67,16 @@ public class Empresa {
     public Funcionario remove(int posicao) {
         if (posicaoOcupada(posicao)) {
             // guarda o funcionario a ser removido
-            Funcionario removido = getLista()[posicao];
+            Funcionario removido = lista[posicao];
 
             // se a posicao nao for a ultima ocupada no vetor, passa pelo loop.
             if (posicao < comprimento-1)
                 // reescreve todos os elementos num indice a menos.
-                for (int i = posicao; getLista()[i] != null; i++)
-                    getLista()[i] = getLista()[i+1];
+                for (int i = posicao; lista[i] != null; i++)
+                    lista[i] = lista[i+1];
 
             // finalmente remove o ultimo funcionario
-            getLista()[comprimento] = null;
+            lista[comprimento] = null;
 
             // reduz o comprimento
             comprimento--;
@@ -98,8 +92,8 @@ public class Empresa {
      * @return true se existir qualquer ocorrencia.
      */
     public boolean contem(String nome) {
-        for (int i = 0; getLista()[i] != null; i++)
-            if (getLista()[i].getNome().equalsIgnoreCase(nome))
+        for (int i = 0; lista[i] != null; i++)
+            if (lista[i].getNome().equalsIgnoreCase(nome))
                 return true;
         return false;
     }
@@ -117,10 +111,8 @@ public class Empresa {
      *Itera pelo array imprimindo cada objeto.
      */
     public void imprime() {
-        for (int i = 0; getLista()[i] != null; i++)
-            System.out.printf("""
-                    [%d] %s\n""",
-                    i, getLista()[i]);
+        for (int i = 0; lista[i] != null; i++)
+            System.out.printf("[%d] %s%n",i, lista[i]);
     }
 
     /**
@@ -129,10 +121,10 @@ public class Empresa {
     public void ordenaPorNome() {
         for (int i=1; i<comprimento; i++) {
             int pointer = i;
-            while (pointer > 0 && getLista()[pointer-1].getNome().compareTo(getLista()[pointer].getNome()) > 0) {
-                Funcionario temp = getLista()[pointer-1];
-                getLista()[pointer-1] = getLista()[pointer];
-                getLista()[pointer] = temp;
+            while (pointer > 0 && lista[pointer-1].getNome().compareTo(lista[pointer].getNome()) > 0) {
+                Funcionario temp = lista[pointer-1];
+                lista[pointer-1] = lista[pointer];
+                lista[pointer] = temp;
                 pointer--;
             }
         }
