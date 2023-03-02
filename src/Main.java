@@ -6,38 +6,40 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("src\\lista_funcionarios.txt");
         Scanner scan = new Scanner(file);
-        Empresa empresa = new Empresa();
+        Company company = new Company();
 
         System.out.println("___ ADICIONA ___");
         for (int i=0; scan.hasNextLine(); i++) {
             String[] func = scan.nextLine().split(",");
-            empresa.adiciona(new Funcionario(func[0], Double.parseDouble(func[1])));
-            System.out.println(String.format("+ [%d} ", i) + empresa.busca(i));
+            company.add(new Employee(func[0], Double.parseDouble(func[1])));
+            System.out.println(String.format("+ [%d} ", i) + company.get(i));
         }
 
         System.out.println("___ CONTEM ___");
         String[] contems = {"Andre Antunes", "Nome Invalido"};
         for (String nome : contems)
-            System.out.println(empresa.contem(nome) +" "+ nome);
+            System.out.println(company.contains(nome) +" "+ nome);
 
         System.out.println("___ BUSCA ___");
         int[] buscas = {3,10,1000};
         for (int i : buscas)
-            System.out.println(String.format("[%d]: ", i) + empresa.busca(i));
+            System.out.println(String.format("[%d]: ", i) + company.get(i));
 
         System.out.println("___ ORDENADO ___");
-        empresa.ordenaPorNome();
-        empresa.imprime();
+        company.sortByName();
+        company.print();
 
         System.out.println("___ REMOVE ___");
         int[] remocoes = {2,10,1000};
         for (int i : remocoes) {
-            Funcionario removido = empresa.remove(i);
+            Employee removido = company.remove(i);
             System.out.println(String.format("- [%d] ", i) + removido);
         }
 
         System.out.println("___ FIM ___");
-        empresa.imprime();
+        company.print();
+
+        scan.close();
     }
 }
 

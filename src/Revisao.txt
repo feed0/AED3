@@ -2,7 +2,7 @@ https://tinyurl.com/aed3-manha
 
 Revisão Algorítmos e Estruturas de dados II
 Exercício 1: pkg funcionarios - Lista
-Elaborar um código em Java para que seja possível efetuar o controle de funcionários de uma empresa.
+Elaborar um código em Java para que seja possível efetuar o controle de funcionários de uma company.
 
 Requisitos:
 
@@ -11,10 +11,10 @@ Classe Funcionário
 (/) Criar um construtor e os métodos get e set para todos os atributos da classe;
 
 Tipo Abstrato de Dados (TAD) Lista
-(/) Criar um vetor chamado: funcionarios, com capacidade para armazenar até 100 posições, como estrutura para armazenamento de objetos do tipo Funcionario. Não devem ser utilizadas classes já prontas do Java como ArrayList, Vector, etc.;
+(/) Criar um vetor chamado: funcionarios, com capacidade para armazenar até 100 posições, como estrutura para armazenamento de objetos do tipo Employee. Não devem ser utilizadas classes já prontas do Java como ArrayList, Vector, etc.;
 (/) Implementar os seguintes métodos com suas respectivas assinaturas:
-(/) public void adiciona(Funcionario func) {}
-(/) public Funcionario busca(int posicao) {}
+(/) public void adiciona(Employee func) {}
+(/) public Employee busca(int posicao) {}
 (/) private boolean posicaoOcupada(int posicao) {}
 (/) public void remove(int posicao) {}
 (/) public boolean contem(String nome) {}

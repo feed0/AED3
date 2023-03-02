@@ -1,16 +1,16 @@
-public class Empresa {
-    private final int capacidade;
-    private final Funcionario[] lista;
-    private int comprimento;
+public class Company {
+    private final int capacity;
+    private final Employee[] employees;
+    private int len;
 
     // construtor
     /**
      * Cria uma empresa com 100 vagas para funcionarios.
      */
-    public Empresa() {
-        this.capacidade = 100;
-        this.lista = new Funcionario[capacidade];
-        this.comprimento = 0;
+    public Company() {
+        this.capacity = 100;
+        this.employees = new Employee[capacity];
+        this.len = 0;
     }
 
     // methods
@@ -20,10 +20,10 @@ public class Empresa {
      *
      * @param func nome do novo funcionario.
      */
-    public void adiciona(Funcionario func) {
+    public void add(Employee func) {
         if (!isFull()) {
-            lista[comprimento] = func;
-            comprimento++;
+            employees[len] = func;
+            len++;
         }
     }
 
@@ -32,9 +32,9 @@ public class Empresa {
      * @param posicao indice do funcionario.
      * @return funcionario na posicao dada.
      */
-    public Funcionario busca(int posicao) {
+    public Employee get(int posicao) {
         try {
-            return lista[posicao];
+            return employees[posicao];
         }
         catch (ArrayIndexOutOfBoundsException aiob) {
             System.out.println(aiob);
@@ -48,9 +48,9 @@ public class Empresa {
      * @return true se o elemento nao for nulo.
      * @exception IndexOutOfBoundsException false se a posicao fornecida for maior que a capacidade.
      */
-    private boolean posicaoOcupada(int posicao) {
+    private boolean isOccupied(int posicao) {
         try {
-            return lista[posicao] != null;
+            return employees[posicao] != null;
         }
         catch (IndexOutOfBoundsException iob) {
             System.out.println(iob);
@@ -64,22 +64,22 @@ public class Empresa {
      * @return objeto do funcionario removido.
      * @exception IndexOutOfBoundsException já é tratada na primeira linha com outro método.
      */
-    public Funcionario remove(int posicao) {
-        if (posicaoOcupada(posicao)) {
+    public Employee remove(int posicao) {
+        if (isOccupied(posicao)) {
             // guarda o funcionario a ser removido
-            Funcionario removido = lista[posicao];
+            Employee removido = employees[posicao];
 
             // se a posicao nao for a ultima ocupada no vetor, passa pelo loop.
-            if (posicao < comprimento-1)
+            if (posicao < len -1)
                 // reescreve todos os elementos num indice a menos.
-                for (int i = posicao; lista[i] != null; i++)
-                    lista[i] = lista[i+1];
+                for (int i = posicao; employees[i] != null; i++)
+                    employees[i] = employees[i+1];
 
             // finalmente remove o ultimo funcionario
-            lista[comprimento] = null;
+            employees[len] = null;
 
             // reduz o comprimento
-            comprimento--;
+            len--;
             return removido;
         }
         return null;
@@ -91,9 +91,9 @@ public class Empresa {
      * @param nome funcionario buscado.
      * @return true se existir qualquer ocorrencia.
      */
-    public boolean contem(String nome) {
-        for (int i = 0; lista[i] != null; i++)
-            if (lista[i].getNome().equalsIgnoreCase(nome))
+    public boolean contains(String nome) {
+        for (int i = 0; employees[i] != null; i++)
+            if (employees[i].getName().equalsIgnoreCase(nome))
                 return true;
         return false;
     }
@@ -103,28 +103,28 @@ public class Empresa {
      *
      * @return numero de elementos.
      */
-    public int tamanho() {
-        return comprimento;
+    public int size() {
+        return len;
     }
 
     /**
      *Itera pelo array imprimindo cada objeto.
      */
-    public void imprime() {
-        for (int i = 0; lista[i] != null; i++)
-            System.out.printf("[%d] %s%n",i, lista[i]);
+    public void print() {
+        for (int i = 0; employees[i] != null; i++)
+            System.out.printf("[%d] %s%n",i, employees[i]);
     }
 
     /**
      * Usa metodo de insercao para ordenar alfabeticamente
      */
-    public void ordenaPorNome() {
-        for (int i=1; i<comprimento; i++) {
+    public void sortByName() {
+        for (int i = 1; i< len; i++) {
             int pointer = i;
-            while (pointer > 0 && lista[pointer-1].getNome().compareTo(lista[pointer].getNome()) > 0) {
-                Funcionario temp = lista[pointer-1];
-                lista[pointer-1] = lista[pointer];
-                lista[pointer] = temp;
+            while (pointer > 0 && employees[pointer-1].getName().compareTo(employees[pointer].getName()) > 0) {
+                Employee temp = employees[pointer-1];
+                employees[pointer-1] = employees[pointer];
+                employees[pointer] = temp;
                 pointer--;
             }
         }
@@ -136,6 +136,6 @@ public class Empresa {
 
      */
     public boolean isFull() {
-        return comprimento == capacidade;
+        return len == capacity;
     }
 }
