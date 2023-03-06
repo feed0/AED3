@@ -1,4 +1,4 @@
-Employee:
+A_Reviewing.Employee:
     Fixed warnings, except about the never used methods;
     Limited the iteration loop in the contem method to the length of the array;
     Just made a research and found helpful info about exception handling,
@@ -17,10 +17,14 @@ I can't create one of its instaces without an employee. I don't get the point of
     Include a .txt file with names and salaries;
 
     added numerous tasks to the backlog;
-    Company.busca() handles ArrayIndexOutOfBoundsException;
+    A_Reviewing.Company.busca() handles ArrayIndexOutOfBoundsException;
 
     ! The first assignment of the year is finished !
 
     Now we were asked to review the use of stacks and queues.
 
     Translated back to English;
+
+    ----
+
+    Part II of the course introduced reading files with bytes;

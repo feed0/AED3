@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Translated back to English">
+    <list default="true" id="818c21f8-457c-4611-98eb-e731b611449b" name="Changes" comment="Empresa.busca() handles ArrayIndexOutOfBoundsException">
+      <change afterPath="$PROJECT_DIR$/src/B_FileStreams/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B_FileStreams/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B_FileStreams/file1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/B_FileStreams/file2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Changes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Revisao.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Revisao.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Changes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Changes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A_Reviewing/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A_Reviewing/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/A_Reviewing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Revisao.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/A_Reviewing/Revisao.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lista_funcionarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/A_Reviewing/employees_list.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +48,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectId" id="2LYZKZLPTNs3TJsrHuXFOkkNuLW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,12 +65,39 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\e02064\IdeaProjects\AED3\src\A_Reviewing" />
       <recent name="C:\Users\Felipe\Documents\GitHub\AED3\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Employee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Employee" />
+  <component name="RunManager" selected="Application.Ex2">
+    <configuration name="Ex1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B_FileStreams.Ex1" />
+      <module name="AED3_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B_FileStreams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="B_FileStreams.Ex2" />
+      <module name="AED3_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="B_FileStreams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Funcionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Funcionario" />
       <module name="AED3_project" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,7 +111,7 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="A_Reviewing.Main" />
       <module name="AED3_project" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,8 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex2" />
+        <item itemvalue="Application.Ex1" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Employee" />
+        <item itemvalue="Application.Funcionario" />
         <item itemvalue="Application.List" />
       </list>
     </recent_temporary>
@@ -224,14 +255,7 @@
       <option name="project" value="LOCAL" />
       <updated>1677030004251</updated>
     </task>
-    <task id="LOCAL-00018" summary="Assignment finished">
-      <created>1677086415496</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1677086415496</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,9 +287,7 @@
     <MESSAGE value="Included lista_funcionarios.txt" />
     <MESSAGE value="added numerous tasks to the backlog" />
     <MESSAGE value="Empresa.busca() handles ArrayIndexOutOfBoundsException" />
-    <MESSAGE value="Assignment finished" />
-    <MESSAGE value="Translated back to English" />
-    <option name="LAST_COMMIT_MESSAGE" value="Translated back to English" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empresa.busca() handles ArrayIndexOutOfBoundsException" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

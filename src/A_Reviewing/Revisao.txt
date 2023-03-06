@@ -11,10 +11,10 @@ Classe Funcionário
 (/) Criar um construtor e os métodos get e set para todos os atributos da classe;
 
 Tipo Abstrato de Dados (TAD) Lista
-(/) Criar um vetor chamado: funcionarios, com capacidade para armazenar até 100 posições, como estrutura para armazenamento de objetos do tipo Employee. Não devem ser utilizadas classes já prontas do Java como ArrayList, Vector, etc.;
+(/) Criar um vetor chamado: funcionarios, com capacidade para armazenar até 100 posições, como estrutura para armazenamento de objetos do tipo A_Reviewing.Employee. Não devem ser utilizadas classes já prontas do Java como ArrayList, Vector, etc.;
 (/) Implementar os seguintes métodos com suas respectivas assinaturas:
-(/) public void adiciona(Employee func) {}
-(/) public Employee busca(int posicao) {}
+(/) public void adiciona(A_Reviewing.Employee func) {}
+(/) public A_Reviewing.Employee busca(int posicao) {}
 (/) private boolean posicaoOcupada(int posicao) {}
 (/) public void remove(int posicao) {}
 (/) public boolean contem(String nome) {}
@@ -23,7 +23,7 @@ Tipo Abstrato de Dados (TAD) Lista
 (/) public void ordenaPorNome() {}
 Obs.: Se necessário, podem ser implementados outros métodos auxiliares além dos acima citados.
 
-Classe de Teste (Main)
+Classe de Teste (A_Reviewing.Main)
 Desenvolva um código Java para testar as classes Funcionário e Lista que realize as seguintes tarefas:
 
 (/) Cadastre o nome e o salário de 5 funcionários

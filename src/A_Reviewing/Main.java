@@ -1,14 +1,16 @@
+package A_Reviewing;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("src\\lista_funcionarios.txt");
+        File file = new File("src\\A_Reviewing\\employees_list.txt");
         Scanner scan = new Scanner(file);
         Company company = new Company();
 
-        System.out.println("___ ADICIONA ___");
+        System.out.println("___ ADD ___");
         for (int i=0; scan.hasNextLine(); i++) {
             String[] func = scan.nextLine().split(",");
             company.add(new Employee(func[0], Double.parseDouble(func[1])));
